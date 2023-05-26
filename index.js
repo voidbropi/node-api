@@ -63,10 +63,6 @@ app.post('/register', async (req, res) => {
   }
 });
 
-app.get('/hello', async (req, res) => {
- return res.status(200).json({message: "Hello"});
-}
-
 app.post('/login', async (req, res) => {
   const { username, password, hwid } = req.body;
 
